@@ -1,7 +1,9 @@
 {
   "private": true,
-  "name": "gatsby",
+  "name": "github-android-card",
   "version": "1.0.0",
+  "description": "Backend API to generate GitHub card for your Android",
+  "author": "Wei Kang @weikangchia",
   "dependencies": {
     "gatsby": "^2.18.14",
     "gatsby-image": "^2.0.15",
@@ -9,7 +11,8 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "google-play-scraper": "^8.0.2"
   },
   "devDependencies": {
     "@vercel/node": "1.9.0"
