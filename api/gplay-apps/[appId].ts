@@ -3,19 +3,22 @@ import gplay from 'google-play-scraper';
 
 export default async (_req: VercelRequest, res: VercelResponse) => {
   const appId = String(_req.query.appId);
-
-  console.log(`Querying: ${appId}`);
+  
+  console.log(`Querying appId: ${appId}`);
 
   const data = await gplay.app({ appId });
 
-  res.status(200).send(`
-  <svg xmlns="http://www.w3.org/2000/svg" width="400" height="160" viewBox="0 0 400 160" fill="none">
+  res.status(200)
+  .setHeader("Cache-Control", "max-age=3600, public")
+  .setHeader("Content-Type", "image/svg+xml; charset=utf-8")
+  .send(`
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="160" viewBox="0 0 400 160" fill="none">
     <style>
       .header {
         font: 300 20px 'Roboto Light', Arial, Sans-Serif;
         fill: #333;
       }
-      
+
       .sub-header {
         font: 300 13px 'Roboto Light', Arial, Sans-Serif;
         fill: #333;
@@ -27,11 +30,11 @@ export default async (_req: VercelRequest, res: VercelResponse) => {
       }
     </style>
 
-    <rect x="0.5" y="0.5" rx="4.5" height="99%" stroke="#e4e2e2" width="399" fill="#fffefe" stroke-opacity="1" />
-    
+	  <rect x="0.5" y="0.5" rx="4.5" height="99%" stroke="#e4e2e2" width="399" fill="#fffefe" stroke-opacity="1" />
+
     <g transform="translate(25, 35)">
       <g transform="translate(0, 0)">
-        <image href="${data.icon}" width="16" height="16" x=0 y=-15></image>
+        <image href="${data.icon}" width="16" height="16" x="0" y="-15" />
       </g>
       <g transform="translate(25, 0)">
         <text x="0" y="0" class="header">${data.title}</text>
@@ -48,13 +51,11 @@ export default async (_req: VercelRequest, res: VercelResponse) => {
 
       <g transform="translate(0, 60)">
         <g transform="translate(50, 0)">
-          <use xlink:href="#stars-1-5-star">
+          <use xlink:href="#${mapScoreToId(data.score)}" />
         </g>
       </g>
     </g>
-  </svg>
 
-  <svg version="1.1">
     <symbol id="stars-full-star">
       <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218" />
     </symbol>
@@ -126,3 +127,22 @@ export default async (_req: VercelRequest, res: VercelResponse) => {
   </svg>
   `);
 };
+
+function mapScoreToId(score: number): string {
+  const roundedNearestScore = Math.ceil(score * 2) / 2;
+
+  switch(roundedNearestScore) {
+    case 0: return 'stars-0-0-star';
+    case 0.5: return 'stars-0-5-star';
+    case 1: return 'stars-1-0-star';
+    case 1.5: return 'stars-1-5-star';
+    case 2: return 'stars-2-0-star';
+    case 2.5: return 'stars-2-5-star';
+    case 3: return 'stars-3-0-star';
+    case 3.5: return 'stars-3-5-star';
+    case 4: return 'stars-4-0-star';
+    case 4.5: return 'stars-4-5-star';
+    case 5: return 'stars-5-0-star';
+    default: return 'stars-0-0-star';
+  }
+}
