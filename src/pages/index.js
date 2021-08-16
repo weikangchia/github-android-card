@@ -34,7 +34,7 @@ function Index() {
       </p>
       <br />
       <h2>Sample</h2>
-      <img alt="github android card sample" style={{width: "400px", height: "160px", display: "block", "marginLeft": "auto", "marginRight": "auto"}} src="http://localhost:3000/api/gplay-apps/khubite.appspot.com.sgtvguide"></img>
+      <img alt="github android card sample" style={{width: "400px", height: "160px", display: "block", "marginLeft": "auto", "marginRight": "auto"}} src="https://github-android-card.vercel.app/api/gplay-apps/khubite.appspot.com.sgtvguide"></img>
     </main>
   );
 }
