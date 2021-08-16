@@ -1,21 +1,25 @@
-![Gatsby Logo](https://github.com/vercel/vercel/blob/master/packages/frameworks/logos/gatsby.svg)
+# GitHub Android Card
 
-# Gatsby Example
+This project is inspired from [github-readme-stats](https://github.com/anuraghazra/github-readme-stats).
 
-This directory is a brief example of a [Gatsby](https://www.gatsbyjs.org/) app with [Serverless Functions](https://vercel.com/docs/v2/serverless-functions/introduction) that can be deployed with Vercel and zero configuration.
+GitHub Android Card is a tool to generate a image link where you can paste it anywhere (e.g. GitHub README profile).
 
-## Deploy Your Own
+## Getting Started
 
-Deploy your own Gatsby project, along with Serverless Functions, with Vercel.
+`https://github-android-card.vercel.app/api/gplay-apps/<your app id>`
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/gatsby&template=gatsby)
+**Example**
 
-_Live Example: https://gatsby.now-examples.now.sh_
+![Readme Card](https://github-android-card.vercel.app/api/gplay-apps/com.appspot.khubite.sgsupermarket)
 
-### How We Created This Example
-
-To get started with Gatsby on Vercel, you can use the [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) to initialize the project:
-
-```shell
-$ gatsby new gatsby-site
+To display it in your GitHub README file:
 ```
+![Readme Card](https://github-android-card.vercel.app/api/gplay-apps/com.appspot.khubite.sgsupermarket)
+```
+
+**Powered by [Vercel](https://vercel.com/)**
+
+
+
+
+
