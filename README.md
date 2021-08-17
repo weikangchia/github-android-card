@@ -17,9 +17,17 @@ To display it in your GitHub README file:
 ![Readme Card](https://github-android-card.vercel.app/api/gplay-apps/com.appspot.khubite.sgsupermarket)
 ```
 
+## License
+
+Distributed under the MIT License. See [LICENSE](license) for more information.
+
+## Contributing
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+## Contact
+
+Wei Kang - weikangchia[@]gmail.com
+
+---
+
 **Powered by [Vercel](https://vercel.com/)**
-
-
-
-
-
