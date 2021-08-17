@@ -2,7 +2,7 @@
 
 This project is inspired from [github-readme-stats](https://github.com/anuraghazra/github-readme-stats).
 
-GitHub Android Card is a tool to generate a image link where you can paste it anywhere (e.g. GitHub README profile).
+GitHub Android Card is a tool to generate a image link of your Android app where you can paste it anywhere (e.g. GitHub README profile).
 
 ## Getting Started
 
