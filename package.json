@@ -5,10 +5,10 @@
   "description": "Backend API to generate GitHub card for your Android",
   "author": "Wei Kang @weikangchia",
   "dependencies": {
-    "gatsby": "4.9.3",
+    "gatsby": "4.11.2",
     "gatsby-image": "3.11.0",
-    "gatsby-plugin-manifest": "4.9.1",
-    "gatsby-plugin-react-helmet": "5.9.0",
+    "gatsby-plugin-manifest": "4.11.1",
+    "gatsby-plugin-react-helmet": "5.11.0",
     "google-play-scraper": "8.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
