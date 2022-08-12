@@ -6408,10 +6408,10 @@ globby@^11.1.0:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
-google-play-scraper@9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/google-play-scraper/-/google-play-scraper-9.0.1.tgz#258892aa81fe12f9d663ca240c7048498e9bd972"
-  integrity sha512-zuQbaPHM1RYxco14/lY2qlotBvm6B/3/PItwkyefbG0wY3Jpm34TRRIjEw+hS0DtJpzudYVByr27AjcGwBA1Pw==
+google-play-scraper@9.0.2:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/google-play-scraper/-/google-play-scraper-9.0.2.tgz#c25313d0eeae382d914d98090f1be861f56268c1"
+  integrity sha512-rEQQb9bXKmX2yU9XP4Z6tofKj9KgKl3LGBWVlgGnDBDg5GhauOgi3dcVIByAMQ/+JpmoRuM3YgSg9moXeY3sIA==
   dependencies:
     cheerio "^1.0.0-rc.10"
     debug "^2.2.0"
