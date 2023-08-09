@@ -4045,7 +4045,7 @@ cheerio-select@^2.1.0:
     domhandler "^5.0.3"
     domutils "^3.0.1"
 
-cheerio@^1.0.0-rc.10:
+cheerio@^1.0.0-rc.12:
   version "1.0.0-rc.12"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.12.tgz#788bf7466506b1c6bf5fae51d24a2c4d62e47683"
   integrity sha512-VqR8m68vM46BNnuZ5NtnGBKIE/DfN0cRIzg9n40EIq9NOv90ayxLBXA8fXC5gquFRGJSTRqBq25Jt2ECLR431Q==
@@ -4643,7 +4643,7 @@ date-fns@^2.25.0:
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.25.0.tgz#8c5c8f1d958be3809a9a03f4b742eba894fc5680"
   integrity sha512-ovYRFnTrbGPD4nqaEqescPEv1mNwvt+UTqI3Ay9SzNtey9NZnYu6E2qCcBBgJ6/2VF1zGGygpyTDITqpQQ5e+w==
 
-debug@2.6.9, debug@^2.2.0, debug@^2.6.0, debug@^2.6.9:
+debug@2.6.9, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -6688,21 +6688,21 @@ globby@^11.0.4, globby@^11.1.0:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
-google-play-scraper@9.1.1:
-  version "9.1.1"
-  resolved "https://registry.yarnpkg.com/google-play-scraper/-/google-play-scraper-9.1.1.tgz#ea27f551306e63f435dd8d707add460269fe9522"
-  integrity sha512-feolKsEk9lEVOpDVbxftoA6t3oG5xt9GgvkMDrC20yY9YYQt2r7blT1KRptW79hW63x746k21dE07QB0yf+MZw==
+google-play-scraper@10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/google-play-scraper/-/google-play-scraper-10.0.0.tgz#2b35cbf3d546c0fe6a4ff3ce0386cf1fb28a8855"
+  integrity sha512-iRVV6HlMYOToPNTA8pub/t8rmr9zhyuaomWIkK1Nck7hwcy8+OX5u7RB7fkf6YtOfBfIlFZ04Yf28Y67vXgNkQ==
   dependencies:
-    cheerio "^1.0.0-rc.10"
-    debug "^2.2.0"
-    got "^11.8.3"
-    memoizee "^0.4.11"
-    ramda "^0.21.0"
+    cheerio "^1.0.0-rc.12"
+    debug "^3.1.0"
+    got "^11.8.6"
+    memoizee "^0.4.14"
+    ramda "^0.29.0"
 
-got@^11.8.3:
-  version "11.8.3"
-  resolved "https://registry.yarnpkg.com/got/-/got-11.8.3.tgz#f496c8fdda5d729a90b4905d2b07dbd148170770"
-  integrity sha512-7gtQ5KiPh1RtGS9/Jbv1ofDpBFuq42gyfEib+ejaRBJuj/3tQFeR5+gw57e4ipaU8c/rCjvX6fkQz2lyDlGAOg==
+got@^11.8.5:
+  version "11.8.5"
+  resolved "https://registry.yarnpkg.com/got/-/got-11.8.5.tgz#ce77d045136de56e8f024bebb82ea349bc730046"
+  integrity sha512-o0Je4NvQObAuZPHLFoRSkdG2lTgtcynqymzg2Vupdx6PorhaT5MCbIyXG6d4D94kk8ZG57QeosgdiqfJWhEhlQ==
   dependencies:
     "@sindresorhus/is" "^4.0.0"
     "@szmarczak/http-timer" "^4.0.5"
@@ -6716,10 +6716,10 @@ got@^11.8.3:
     p-cancelable "^2.0.0"
     responselike "^2.0.0"
 
-got@^11.8.5:
-  version "11.8.5"
-  resolved "https://registry.yarnpkg.com/got/-/got-11.8.5.tgz#ce77d045136de56e8f024bebb82ea349bc730046"
-  integrity sha512-o0Je4NvQObAuZPHLFoRSkdG2lTgtcynqymzg2Vupdx6PorhaT5MCbIyXG6d4D94kk8ZG57QeosgdiqfJWhEhlQ==
+got@^11.8.6:
+  version "11.8.6"
+  resolved "https://registry.yarnpkg.com/got/-/got-11.8.6.tgz#276e827ead8772eddbcfc97170590b841823233a"
+  integrity sha512-6tfZ91bOr7bOXnK7PRDCGBLa1H4U080YHNaAQ2KsMGlLEzRbk44nsZF2E1IeRc3vtJHPVbKCYgdFbaGO2ljd8g==
   dependencies:
     "@sindresorhus/is" "^4.0.0"
     "@szmarczak/http-timer" "^4.0.5"
@@ -8004,7 +8004,7 @@ memfs@^3.2.2:
   dependencies:
     fs-monkey "1.0.3"
 
-memoizee@^0.4.11, memoizee@^0.4.15:
+memoizee@^0.4.14, memoizee@^0.4.15:
   version "0.4.15"
   resolved "https://registry.npmjs.org/memoizee/-/memoizee-0.4.15.tgz"
   integrity sha512-UBWmJpLZd5STPm7PMUlOw/TSy972M+z8gcyQ5veOnSDRREz/0bmpyTfKt3/51DhEBqCZQn1udM/5flcSPYhkdQ==
@@ -9316,10 +9316,10 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
-ramda@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.npmjs.org/ramda/-/ramda-0.21.0.tgz"
-  integrity sha1-oAGr7bP/YQd9T/HVd9RN536NCjU=
+ramda@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.29.0.tgz#fbbb67a740a754c8a4cbb41e2a6e0eb8507f55fb"
+  integrity sha512-BBea6L67bYLtdbOqfp8f58fPMqEwx0doL+pAi8TZyp2YWz8R9G8z9x75CZI8W+ftqhFHCpEX2cRnUUXK130iKA==
 
 randombytes@^2.1.0:
   version "2.1.0"
